@@ -1,0 +1,45 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add cors
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/home/naty/Dev/voe-dio/api/node_modules/cookie-parser/node_modules'
+
+npm manifest: 
+  {
+    "name": "api",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "node ./bin/www",
+      "dev": "nodemon ./bin/www",
+      "create-data": "node data/generateFakeData.js"
+    },
+    "dependencies": {
+      "cookie-parser": "~1.4.4",
+      "cors": "^2.8.5",
+      "debug": "~2.6.9",
+      "express": "~4.16.1",
+      "morgan": "~1.9.1"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.20"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
